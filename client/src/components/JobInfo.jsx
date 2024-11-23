@@ -8,5 +8,4 @@ const JobInfo = ({ icon, text }) => {
     </Wrapper>
   );
 };
-
 export default JobInfo;

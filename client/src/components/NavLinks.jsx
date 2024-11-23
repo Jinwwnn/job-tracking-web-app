@@ -3,22 +3,19 @@ import links from '../utils/links';
 import { NavLink } from 'react-router-dom';
 
 const NavLinks = ({ isBigSidebar }) => {
-  const { user, toggleSidebar } = useDashboardContext();
-
+  const { toggleSidebar, user } = useDashboardContext();
   return (
     <div className='nav-links'>
       {links.map((link) => {
         const { text, path, icon } = link;
-        // admin user
         const { role } = user;
-        if (role !== 'admin' && path === 'admin') return;
-        
+        if (path === 'admin' && role !== 'admin') return;
         return (
           <NavLink
             to={path}
             key={text}
-            onClick={isBigSidebar ? null : toggleSidebar}
             className='nav-link'
+            onClick={isBigSidebar ? null : toggleSidebar}
             end
           >
             <span className='icon'>{icon}</span>
@@ -29,5 +26,4 @@ const NavLinks = ({ isBigSidebar }) => {
     </div>
   );
 };
-
 export default NavLinks;

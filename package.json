@@ -1,14 +1,15 @@
 {
   "name": "jobify",
   "version": "1.0.0",
-  "description": "[Jobify](https://jobify.live/)",
+  "description": "[Jobify](https://mern-jobify-v2.onrender.com/)",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "setup-project": "npm i && cd client && npm i",
+    "setup-production-app": "npm i && cd client && npm i && npm run build ",
     "server": "nodemon server",
     "client": "cd client && npm run dev",
-    "dev": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,7 @@
     "concurrently": "^8.0.1",
     "cookie-parser": "^1.4.6",
     "datauri": "^4.1.0",
-    "dayjs": "^1.11.9",
+    "dayjs": "^1.11.7",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
