@@ -1,18 +1,9 @@
 # Job tracking application
  Job tracking applicationa helps job seekers to manage their job applications by adding, updating, and deleting records, filter applications, and view overall statistics.
 
-## How to run the project
-To setup the project:
-```
-npm run setup-project
-``` 
+## Try and explore the app:
+https://job-tracking-web-app-mern.onrender.com
 
-To setup the production app:
-```
-npm run setup-production-app
-```
+### Click the "Login/Demo User" button on the landing page, and then click the "Explore The App" button on log in page to try out this app!
+Happy job hunting and tracking!
 
-To run the server:
-``` 
-npm run server
-```
